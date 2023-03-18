@@ -1,0 +1,121 @@
+@use "../variables";
+
+.major {
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
+  position: relative;
+  margin-bottom: 120px;
+  padding: 0 0 20px;
+  overflow: hidden;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    margin-bottom: 50px;
+  }
+}
+
+.major__image {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  background-color: variables.$color-pearl;
+}
+
+.major__picture {
+  height: 100%;
+  object-fit: cover;
+}
+
+.major__content {
+  padding: 304px 0 260px 125px;
+  @media (max-width: variables.$vp-max-tablet) {
+    padding: 180px 0 185px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    padding: 150px 0 170px;
+  }
+}
+
+.major__text {
+  margin: 0 0 32px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  color: variables.$color-alice-blue;
+  text-transform: uppercase;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-bottom: 0;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    margin-bottom: 8px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
+
+.major__subheading {
+  font-family: variables.$ff-pt-mono;
+  color: variables.$color-alice-blue;
+  max-width: 620px;
+  margin: 0 0 47px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: lowercase;
+
+
+@media (max-width: variables.$vp-max-tablet) {
+  margin-bottom: 57px;
+  }
+
+@media (max-width: variables.$vp-max-mobile) {
+  margin-bottom: 46px;
+  font-size: 14px;
+  line-height: 21px;
+  }
+}
+
+.major__link-button {
+  margin: 0;
+  padding: 15px 27px 19px;
+  border: none;
+  border-radius: 3px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: variables.$color-alice-blue;
+  background-color: variables.$color-sky-blue;
+  white-space: nowrap;
+  text-transform: uppercase;
+  @media (max-width: variables.$vp-max-tablet) {
+    margin-left: 45px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px 37px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

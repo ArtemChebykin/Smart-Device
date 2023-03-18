@@ -1,11 +1,15 @@
+@use "../variables";
+@use "../mixins";
+
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   position: relative;
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* stylelint-disable-next-line */
-  min-height: calc(100 * var(--vh, 1vh));
 
   .header,
   .footer {
@@ -17,34 +21,12 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-  white-space: nowrap;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
+  @include mixins.visually-hidden;
 }
 
 .scroll-lock-ios {
   position: fixed;
-
   overflow: hidden;
 }
 
@@ -54,7 +36,6 @@
 
 .no-scrollbar {
   -ms-overflow-style: none;
-  scrollbar-width: none;
 
   &::-webkit-scrollbar {
     display: none;
@@ -62,10 +43,72 @@
 }
 
 .no-transition {
-  /* stylelint-disable-next-line */
   transition: none !important;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.reset-default {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.page-link {
+  text-decoration: none;
+  color: variables.$color-default-white;
+}
+
+.hidden-max-desktop {
+  @media (max-width: variables.$vp-max-tablet) {
+    display: none;
+  }
+}
+
+.hidden-min-desktop {
+  @media (min-width: variables.$vp-1024) {
+    display: none;
+  }
+}
+
+.hidden-max-tablet {
+  @media (max-width: variables.$vp-max-mobile) {
+    display: none;
+  }
+}
+
+.hidden-min-tablet {
+  @media (min-width: variables.$vp-768) {
+    display: none;
+  }
+}
+
+// Accordion
+@media (max-width: variables.$vp-max-mobile) {
+  [data-accordion-item].is-open {
+    [data-accordion-button]::before {
+      display: none;
+    }
+  }
+
+  [data-accordion-item]:not(.is-open) {
+    [data-accordion-content] {
+      display: none;
+    }
+  }
+}
+
+// Для блока about со скрываемым текстом
+[data-expandable]:not(.is-expanded) [data-expandable-item] {
+  display: none;
+}
+
+[data-expandable].is-expanded [data-expandable-button-folded] {
+  display: none;
+}
+
+[data-expandable]:not(.is-expanded) [data-expandable-button-expanded] {
+  display: none;
 }

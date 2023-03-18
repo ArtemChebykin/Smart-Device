@@ -1,0 +1,132 @@
+@use "../variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: variables.$pearl-to-bottom;
+  z-index: 3;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    position: absolute;
+  }
+}
+
+.header__container {
+  display: flex;
+  padding-right: 60px;
+
+  @media (max-width: variables.$vp-max-desktop) {
+    padding: 0;
+  }
+}
+
+.header__logo {
+  display: block;
+  padding: 30px 0 35px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (max-width: variables.$vp-max-tablet) {
+    padding: 20px 0 25px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    padding: 15px 0 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 160px;
+  column-gap: 120px;
+  flex-grow: 1;
+
+  @media (max-width: variables.$vp-max-desktop) {
+    padding-left: 80px;
+    column-gap: 80px;
+  }
+
+  @media (max-width: variables.$vp-max-tablet) {
+    justify-content: flex-end;
+    column-gap: 0;
+    padding-right: 10px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.header__item {
+  padding: 45px 0 55px;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    padding: 0;
+  }
+}
+
+.header__link {
+  display: inline-flex;
+  align-items: center;
+  line-height: 18px;
+
+  @media (max-width: variables.$vp-max-tablet) {
+    padding: 30px 20px 50px;
+  }
+
+  @media (max-width: variables.$vp-max-mobile) {
+    padding: 20px 20px 30px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__link-text {
+  margin-left: 15px;
+  font-family: variables.$ff-pt-mono;
+  color: variables.$color-alice-blue;
+}
+
+.header__btn {
+  height: 40px;
+  margin: 35px 0 45px;
+  padding: 10px 15px;
+  white-space: nowrap;
+  border: 1px solid variables.$color-alice-blue;
+  border-radius: 3px;
+  font-family: variables.$ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: variables.$color-alice-blue;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
