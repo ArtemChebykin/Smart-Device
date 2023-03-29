@@ -19,11 +19,7 @@
 // ---------------------------------
 
 @import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/header";
-
-
-
 @import "blocks/major";
 @import "blocks/advantages";
 @import "blocks/сompany";
@@ -32,7 +28,7 @@
 @import "blocks/form";
 @import "blocks/social-list";
 @import "blocks/main-footer";
-
+@import "blocks/modal";
 
 // ---------------------------------
 
@@ -45,7 +41,6 @@
         @content;
       }
     }
-
     &.focus-visible:focus {
       @content;
     }

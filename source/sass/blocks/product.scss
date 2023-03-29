@@ -68,18 +68,17 @@
 }
 
 .product__item h4 {
-  color: variables.$color-default-white;
-  font-family: variables.$ff-roboto-condensed;
   position: absolute;
   top: 0;
   padding: 45px 40px 0 40px;
   width: 240px;
   margin: 0;
   z-index: 1;
+  font-family: variables.$ff-roboto-condensed;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-
+  color: variables.$color-default-white;
 
   @media (max-width: variables.$vp-max-tablet) {
     padding: 37px 45px 0 45px;

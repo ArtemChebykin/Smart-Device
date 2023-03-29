@@ -1,6 +1,6 @@
 @use "../variables";
 
-.сompany {
+.company {
   margin-bottom: 100px;
 
   @media (max-width: variables.$vp-max-tablet) {
@@ -8,12 +8,7 @@
   }
 }
 
-.сompany__container {
-  display: flex;
-  align-items: flex-start;
-}
-
-.сompany__image {
+.company__image {
   object-fit: contain;
   margin-right: 100px;
 
@@ -22,8 +17,13 @@
   }
 }
 
-.сompany h3 {
-  margin: 0 0 -4px;
+.company__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.company h2 {
+  margin: 0 0 12px;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -31,7 +31,7 @@
   font-family: variables.$ff-roboto-condensed;
 
   @media (max-width: variables.$vp-max-tablet) {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
   }
 
   @media (max-width: variables.$vp-max-mobile) {
@@ -40,26 +40,31 @@
   }
 }
 
-.сompany p {
+.company p {
+  margin: 23px 0 0;
   font-family: variables.$ff-pt-mono;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
-  margin-bottom: 21px;
+  line-height: 21px;
   color: variables.$color-pearl;
 
+  &:first-of-type {
+    margin-top: 0;
+  }
+
   @media (max-width: variables.$vp-max-tablet) {
-    margin-bottom: 15px;
+    line-height: 21.4px;
   }
 
   @media (max-width: variables.$vp-max-mobile) {
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 15px;
+    margin-top: 18px;
+    margin-bottom: -3px;
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
-.сompany__description-text {
+.company__description-text {
   margin-bottom: 38px;
 
   @media (max-width: variables.$vp-max-tablet) {
@@ -67,17 +72,17 @@
   }
 }
 
-.сompany__button {
-  font-family: variables.$ff-roboto-condensed;
-  color: variables.$color-sky-blue;
-  background-color: variables.$color-default-white;
+.company__button {
   padding: 14px 50px;
   border: 1px solid variables.$color-sky-blue;
   border-radius: 3px;
+  font-family: variables.$ff-roboto-condensed;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
+  color: variables.$color-sky-blue;
+  background-color: variables.$color-default-white;
   text-transform: uppercase;
 
   @media (max-width: variables.$vp-max-mobile) {
