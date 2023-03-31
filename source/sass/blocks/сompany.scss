@@ -23,7 +23,7 @@
 }
 
 .company h2 {
-  margin: 0 0 12px;
+  margin: 0 0 15px;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
@@ -58,7 +58,7 @@
 
   @media (max-width: variables.$vp-max-mobile) {
     margin-top: 18px;
-    margin-bottom: -3px;
+    margin-bottom: -1px;
     font-size: 14px;
     line-height: 19px;
   }
@@ -68,7 +68,7 @@
   margin-bottom: 38px;
 
   @media (max-width: variables.$vp-max-tablet) {
-  margin-bottom: 17px;
+    margin-bottom: 17px;
   }
 }
 

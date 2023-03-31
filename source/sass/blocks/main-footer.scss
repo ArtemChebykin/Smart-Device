@@ -17,6 +17,7 @@
   @media (max-width: variables.$vp-max-mobile) {
     display: block;
     padding-top: 35px;
+    padding-bottom: 0;
   }
 }
 
@@ -35,7 +36,7 @@
     justify-content: space-between;
     grid-column: 1 / 3;
     margin-right: 0;
-    margin-bottom: 3px;
+    margin-bottom: 1px;
   }
 
   @media (max-width: variables.$vp-max-mobile) {
@@ -219,12 +220,10 @@
   &:hover,
   &:focus-visible {
     background-color: variables.$color-pearl-veil;
-    opacity: 0.8;
   }
 
   &:active {
     background-color: variables.$color-pearl-veil;
-    opacity: 0.6;
   }
 }
 

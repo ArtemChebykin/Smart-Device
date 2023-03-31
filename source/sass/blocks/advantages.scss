@@ -40,7 +40,7 @@
   box-shadow: -5px 0 0 0 variables.$color-sky-blue;
 
   h3 {
-    font-family: 'Roboto Condensed';
+    font-family: variables.$ff-roboto-condensed;
     margin: 0 0 14px;
     padding: 0;
     font-weight: 400;
@@ -119,7 +119,7 @@
     }
 
     &:nth-of-type(4n) h3 {
-      margin-bottom: 3px;
+      margin-bottom: 2px;
     }
 
     &:nth-of-type(3n) p,

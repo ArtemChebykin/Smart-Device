@@ -25,11 +25,10 @@
     <header class="header">
       <div class="container">
         <div class="header__container">
-          <a href="index.html">
-            <picture class="header__logo">
+          <a class="header__logo" href="index.html">
+            <picture>
               <source media="(max-width: 767px)" srcset="img/logo-mobile.svg">
-              <img src="img/logo.svg" width="215" height="55"
-                alt="Логотип интернет-магазина печатных плат Smart Device.">
+              <img src="img/logo.svg" width="215" height="55"alt="Логотип интернет-магазина печатных плат Smart Device.">
             </picture>
           </a>
           <ul class="header__list reset-default">
@@ -42,6 +41,7 @@
                 <span class="visually-hidden">Написать письмо на e-mail.</span>
               </a>
             </li>
+
             <li class="header__item">
               <a class="header__link page-link" href="tel:+7(495)0005252">
                 <svg aria-hidden="true" focusable="false" width="20" height="20">
@@ -67,21 +67,20 @@
           <source type="image/webp" srcset="img/background-desktop.webp 1x, img/background-desktop2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/background-mobile.png 1x, img/background-mobile2x.png 2x">
           <source media="(max-width: 1023px)" srcset="img/background-tablet.png 1x, img/background-tablet2x.png 2x">
-          <img class="major__picture" src="img/background-desktop.png" width="1920" height="880" aria-hidden="true"
+          <img src="img/background-desktop.png" width="1920" height="880" aria-hidden="true"
             alt="Печатные платы.">
         </picture>
         <div class="container">
           <div class="major__content">
             <h2>Печатные платы</h2>
             <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-            <a class="major__link-button btn" href="feedback">
+            <a class="major__link-button btn" href="#feedback">
               <span class="hidden-max-tablet">Получить бесплатную консультацию</span>
               <span class="hidden-min-tablet">Бесплатная консультация</span>
             </a>
           </div>
         </div>
       </section>
-
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества компании Smart Device.</h2>
         <div class="container">
@@ -91,8 +90,7 @@
                 <use href="img/sprite.svg#efficiency-icon"></use>
               </svg>
               <h3>Оперативные сроки</h3>
-              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и
-                доставлять заказы плат и комплектующих в самые короткие сроки</p>
+              <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и комплектующих в&nbsp;самые короткие сроки</p>
             </li>
             <li class="advantages__item">
               <svg aria-hidden="true" focusable="false" width="35" height="35">
@@ -124,19 +122,20 @@
       <section class="company">
         <h2 class="visually-hidden">Информация о компании Smart Device.</h2>
         <div class="container company__container">
-          <img class="company__image hidden-max-tablet" src="img/year-2022.png" alt="2022 год">
+          <img class="company__image hidden-max-tablet" src="img/year.png" alt="2022 год">
           <div class="company__description" data-expandable>
             <h2>О компании</h2>
             <div class="company__description-text">
-              <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
-                1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-
-              <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                Печатные платы и комплектующие Service Devices применяются на предприятиях
-                Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники.
-                Среди наших клиентов крупнейшие Производители светотехники России.
+              <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые
+                технологии
+                с 1997 года. Выполняем срочные заказы и пилотные образцы до&nbsp;10&nbsp;дней.</p>
+              <p>Наши поставщики&nbsp;&mdash;
+                мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+                <span class="hidden-max-tablet">Печатные платы и&nbsp;комплектующие
+                  Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ,
+                  АвтоГАЗ),
+                  МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
               </p>
-
               <p data-expandable-item>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более
                 1&nbsp;000&nbsp;000&nbsp;клиентов,
                 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается
@@ -157,7 +156,6 @@
         </div>
       </section>
 
-
       <section class="product">
         <h2 class="visually-hidden">Продукты представляемые компанией Smart Device.</h2>
         <div class="container">
@@ -165,7 +163,7 @@
             <span class="hidden-max-tablet">Smart Device предлагает следующие товары и&nbsp;услуги</span>
             <span class="hidden-min-tablet">Товары и&nbsp;услуги Smart&nbsp;Device</span>
           </h3>
-          <ul class="product__list reset-default">
+          <ul class="reset-default">
             <li class="product__item">
               <a href="#">
                 <picture class="product__image">
@@ -173,8 +171,7 @@
                     srcset="img/production-mobile.webp 1x, img/production-mobile2x.webp 2x">
                   <source type="image/webp" media="(max-width: 1023px)"
                     srcset="img/production-tablet.webp 1x, img/production-tablet2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="img/production-desktop.webp 1x, img/production-desktop2x.webp 2x">
+                  <source type="image/webp" srcset="img/production-desktop.webp 1x, img/production-desktop2x.webp 2x">
                   <source media="(max-width: 767px)"
                     srcset="img/production-mobile.jpg 1x, img/production-mobile2x.jpg 2x">
                   <source media="(max-width: 1023px)"
@@ -235,41 +232,41 @@
         </div>
       </section>
 
-    <section class="feedback" id="feedback">
-      <div class="container feedback__container">
-        <div class="feedback__form form" data-form-validate data-callback="base">
-          <img class="feedback__picture" src="img/airplane.png" width="510" height="285" aria-hidden="true" alt="">
-          <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
-          <p>Мы проконсультируем Вас бесплатно</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="feedback__form-container">
-              <label data-validate-type="text" data-required>
-                <input type="text" name="name" placeholder="Имя" required>
-                <span class="visually-hidden">Имя</span>
-              </label>
-              <label data-validate-type="phone" data-required>
-                <input type="tel" name="phone" placeholder="Телефон" required>
-                <span class="visually-hidden">Телефон</span>
-              </label>
-              <div class="form__textarea feedback__form-textarea">
-                <label>
-                  <textarea name="question" placeholder="Ваш вопрос"></textarea>
-                  <span class="visually-hidden">Ваш вопрос</span>
+      <section class="feedback" id="feedback">
+        <div class="container feedback__container">
+          <div class="feedback__form form" data-form-validate data-callback="base">
+            <img class="feedback__image" src="img/airplane.png" width="510" height="285" aria-hidden="true" alt="">
+            <h2>Остались вопросы? Задайте их нам!</h2>
+            <p>Мы проконсультируем Вас бесплатно</p>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="feedback__form-container">
+                <label data-validate-type="text" data-required>
+                  <input type="text" name="name" placeholder="Имя" required>
+                  <span class="visually-hidden">Имя</span>
                 </label>
-              </div>
-              <button class="form__button btn" type="submit">Задать вопрос</button>
-              <div class="form__checkbox-wrapper">
-                <label data-validate-type="checkbox" data-required>
-                  <input type="checkbox" name="agreement" required checked>
-                  <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                <label data-validate-type="phone" data-required>
+                  <input type="tel" name="phone" placeholder="Телефон" required>
+                  <span class="visually-hidden">Телефон</span>
                 </label>
+                <div class="form__textarea feedback__form-textarea">
+                  <label>
+                    <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                    <span class="visually-hidden">Ваш вопрос</span>
+                  </label>
+                </div>
+                <button class="form__btn btn" type="submit">Задать вопрос</button>
+                <div class="form__checkbox-wrapper">
+                  <label data-validate-type="checkbox" data-required>
+                    <input type="checkbox" name="agreement" required checked>
+                    <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                  </label>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
     <footer class="main-footer">
       <div class="container">
@@ -369,16 +366,16 @@
       <div class="modal__content">
         <div class="modal__close-btn" tabindex="0" data-close-modal>
           <svg aria-hidden="true" focusable="false" width="20" height="20">
-            <use href="img/sprite.svg#icon-close"></use>
+            <use href="img/sprite.svg#close-icon"></use>
           </svg>
         </div>
-        <div class="form" data-form-validate>
+        <div class="form" data-form-validate data-callback="base">
           <h2>Закажите звонок</h2>
           <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal__form-container">
               <label data-validate-type="text" data-required>
-                <input type="text" name="name" placeholder="Имя" required>
+                <input data-focus type="text" name="name" placeholder="Имя" required>
                 <span class="visually-hidden">Имя</span>
               </label>
               <label data-validate-type="phone" data-required>
@@ -391,7 +388,7 @@
                   <span class="visually-hidden">Ваш вопрос</span>
                 </label>
               </div>
-              <button class="form__button modal__button btn" type="submit">Отправить</button>
+              <button class="form__btn modal__btn btn" type="submit">Отправить</button>
               <div class="form__checkbox-wrapper modal__agreement">
                 <label data-validate-type="checkbox" data-required>
                   <input type="checkbox" name="agreement" required checked>

@@ -14,7 +14,7 @@
     color: variables.$color-default-white;
 
     @media (max-width: variables.$vp-max-tablet) {
-      margin-bottom: 37px;
+      margin-bottom: 40px;
     }
 
     @media (max-width: variables.$vp-max-mobile) {
@@ -24,7 +24,7 @@
     }
   }
 
-  .product__list {
+  ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 80px 85px;

@@ -53,7 +53,7 @@
 
   p {
     margin: 0 0 36px;
-    padding-left: 34px;
+    padding-left: 5px;
     font-family: variables.$ff-pt-mono;
     font-weight: 400;
     font-size: 16px;
@@ -75,7 +75,7 @@
   @media (max-width: variables.$vp-max-tablet) {
     display: block;
     padding-top: 45px;
-    padding-bottom: 118px;
+    padding-bottom: 115px;
   }
 
   @media (max-width: variables.$vp-max-mobile) {
@@ -96,7 +96,7 @@
   display: grid;
   grid-template-columns: 275px 275px;
   grid-gap: 20px 30px;
-  padding-left: 34px;
+  padding-left: 5px;
 
   @media (max-width: variables.$vp-max-tablet) {
     grid-template-columns: 1fr 1fr;
@@ -118,7 +118,7 @@
   }
 }
 
-.feedback__picture {
+.feedback__image {
   position: absolute;
   top: 245px;
   left: 39px;
