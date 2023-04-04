@@ -56,6 +56,7 @@
   padding-left: 160px;
   column-gap: 120px;
   flex-grow: 1;
+  align-items: center;
 
   @media (max-width: variables.$vp-max-desktop) {
     padding-left: 80px;
@@ -75,7 +76,7 @@
 }
 
 .header__item {
-  padding: 45px 0 55px;
+  padding: 5px 0 5px;;
 
   @media (max-width: variables.$vp-max-tablet) {
     padding: 0;

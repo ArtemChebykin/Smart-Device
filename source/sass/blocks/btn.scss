@@ -6,4 +6,5 @@
   border: none;
   cursor: pointer;
   transition: opacity variables.$trans-default;
+  user-select: none;
 }

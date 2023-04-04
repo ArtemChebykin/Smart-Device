@@ -241,16 +241,16 @@
             <form action="https://echo.htmlacademy.ru/" method="post">
               <div class="feedback__form-container">
                 <label data-validate-type="text" data-required>
-                  <input type="text" name="name" placeholder="Имя" required>
+                  <input type="text" name="name" autocomplete="off" placeholder="Имя" required>
                   <span class="visually-hidden">Имя</span>
                 </label>
                 <label data-validate-type="phone" data-required>
-                  <input type="tel" name="phone" placeholder="Телефон" required>
+                  <input type="tel" name="phone" autocomplete="off" placeholder="Телефон" required>
                   <span class="visually-hidden">Телефон</span>
                 </label>
                 <div class="form__textarea feedback__form-textarea">
-                  <label>
-                    <textarea name="question" placeholder="Ваш вопрос"></textarea>
+                  <label data-validate-type="question" data-required>
+                    <textarea name="question" id="question" placeholder="Ваш вопрос" rows="5"></textarea>
                     <span class="visually-hidden">Ваш вопрос</span>
                   </label>
                 </div>

@@ -107,6 +107,12 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+
+.feedback__form-container label {
+  &:hover {
+    opacity: 0.7;
+    }
+  }
 }
 
 .feedback__form-textarea {
@@ -116,6 +122,10 @@
   @media (max-width: variables.$vp-max-mobile) {
     margin-bottom: 32px;
   }
+
+  &:hover {
+    opacity: 0.7;
+    }
 }
 
 .feedback__image {
